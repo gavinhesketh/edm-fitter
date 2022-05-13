@@ -1,2 +1,6 @@
+export BASEDIR=$PWD
+
+export PATH=$BASEDIR/install/bin:$PATH
+
 echo "*********************** mkedm to compile *******************"
-alias mkedm="cd /unix/muons/g-2/hesketh/edm-fitter/build ; make -j8 install ; cd -"
+alias mkedm="cd $BASEDIR/build ; make -j8 install ; cd -"

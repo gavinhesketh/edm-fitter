@@ -10,5 +10,9 @@ export CMAKE_PREFIX_PATH=/cvmfs/sft.cern.ch/lcg/releases/LCG_101/jsonmcpp/3.9.1/
 # cmake -Dnlohmann_json_ROOT=/cvmfs/sft.cern.ch/lcg/releases/LCG_101/jsonmcpp/3.9.1/x86_64-centos7-gcc11-opt ..
 
 
+export BASEDIR=$PWD
+
+export PATH=$BASEDIR/install/bin:$PATH
+
 echo "*********************** mkedm to compile *******************"
-alias mkedm="cd /unix/muons/g-2/hesketh/edm-fitter/build ; make -j8 install ; cd -"
+alias mkedm="cd $BASEDIR/build ; make -j8 install ; cd -"

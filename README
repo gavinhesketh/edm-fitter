@@ -1,0 +1,22 @@
+# Get the repository:
+git clone https://github.com/gavinhesketh/edm-fitter.git
+cd edm-fitter
+
+#Source one of the setup scripts:
+# on the UCL cluster:
+source ucl-setup.sh
+# on a laptop:
+source setup.sh
+
+# compile:
+mkdir build
+cd build
+cmake ..
+make -j
+make install -j
+
+
+#this will create the folder edm-fitter/install/bin, which should be in your path. So, go to a directory where you want to run and just:
+> fitEDM_with_Blinding
+
+
