@@ -19,4 +19,6 @@ make install -j
 #this will create the folder edm-fitter/install/bin, which should be in your path. So, go to a directory where you want to run and just:
 > fitEDM_with_Blinding
 
+# to recopile, an alias set in the setup script should take care of it:
+> mkedm
 
